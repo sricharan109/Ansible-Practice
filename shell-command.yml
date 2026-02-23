@@ -1,0 +1,8 @@
+- name: working with shell and command module
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: command module
+      #ansible.builtin.command: cat etc/passwd | grep root
+      ansible.builtin.shell: cat etc/passwd | grep root
+      register: useroutput 
