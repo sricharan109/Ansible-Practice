@@ -3,3 +3,9 @@
   tasks:
    - name: PING the webserver
      ansible.builtin.ping:
+- name: Print hello world
+  hosts: web
+  tasks:
+   - name: Printing world
+     ansible.builtin.debug:
+       msg:Helloo world 
