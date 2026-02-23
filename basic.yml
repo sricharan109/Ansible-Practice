@@ -8,4 +8,4 @@
   tasks:
    - name: Printing world
      ansible.builtin.debug:
-       msg:Helloo world 
+       msg: "Helloo world" 
