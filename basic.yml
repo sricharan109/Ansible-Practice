@@ -1,2 +1,5 @@
-- name: RAJESh
-  address: 01/21212121pik
+- name: PING the servers
+  hosts: web
+  tasks:
+   - name: PING the webserver
+     ansible.builtin.ping:
