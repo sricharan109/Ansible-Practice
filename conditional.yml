@@ -1,5 +1,5 @@
 - name: Check input number is greater than 10 or not 
-  hosts: local
+  hosts: localhost
   connection: local
   vars_prompt:
     - name: input
