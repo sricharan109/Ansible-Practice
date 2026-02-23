@@ -1,0 +1,21 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "ansible is built on python" #STRING
+    DURATION: 12 #INT
+    ISLIVE: true #BOOL
+    DETAILS: #DICTIONARY
+      MONTHS: 4
+      HEAD: "USA"  
+  Topic:
+    - linux 
+    - shell 
+  tasks:
+  - name: printing all the variables
+    ansible.builtin.debug:
+      msg: | 
+        program: {{PROGRAM}}
+        details: {{DETAILS}}
+        topic: {{Topic}}
+        
