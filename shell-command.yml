@@ -4,5 +4,8 @@
   tasks:
     - name: command module
       #ansible.builtin.command: cat etc/passwd | grep root
-      ansible.builtin.shell: cat etc/passwd | grep root
+      ansible.builtin.shell: mkdir folder
       register: useroutput 
+    - name: output is 
+      ansible.builtin.debug:
+       msg: "{{useroutput}}"
